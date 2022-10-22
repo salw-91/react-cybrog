@@ -4,9 +4,9 @@ import GamingLibraryData from '../../Data/GamingLibraryData'
 
 const GamingLibrary = () => {
 
-    // const cards = GamingLibraryData.map(card => {
-    //     return <Card id={card.id} image={card.image} title={card.title} category={card.category} rate={card.rate} download={card.download} />
-    // })
+    const cards = GamingLibraryData.map(card => {
+        return <GamingLibraryCard id={card.id} image={card.image} title={card.title} category={card.category} date_added={card.date_added} download={card.download} />
+    })
 
     return (
 
@@ -14,8 +14,8 @@ const GamingLibrary = () => {
             <SectionHeader>
                 Gaming Library
             </SectionHeader>
-            <div className='most-popular-items'>
-                <GamingLibraryCard />
+            <div className='gaming-library-cards'>
+                {cards}
             </div>
         </SectionWrapper>
     )
