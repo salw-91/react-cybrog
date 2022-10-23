@@ -7,8 +7,8 @@ const App = () => {
         <>
             <Header />
             <Container >
-                {/* <Hero />
-                <MustPopular /> */}
+                <Hero />
+                <MustPopular />
                 <GamingLibrary />
             </Container >
             <Footer />
